@@ -22,6 +22,7 @@ def average_length(filename1, filename2):
         with open(filename2, 'w') as output_file:
             first_10_chars = input_file.read(10)
             output_file.write(first_10_chars)
+    print(f"Первые 10 символов {first_10_chars} в файле {filename2}")
 
     with open(filename2, 'r') as file:
         content = file.read()
