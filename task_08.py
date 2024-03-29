@@ -90,12 +90,16 @@ while task != 11:
     elif task == 7:
         print("Задание 7: Напишіть програму, яка генерує випадковий ім'я та прізвище за допомогою модуля random та списку доступних імен і прізвищ.\n")
 
-        names = ['Олег', 'Даша', 'Славик', 'Оля', 'Вадим', 'Марк']
+        firstname_list = ['Олег', 'Даша', 'Славик', 'Оля', 'Вадим', 'Марк']
+        lastname_list = ['Николаенко', 'Васильев', 'Гершкович', 'Василиади', 'Дмитрук', 'Савченко', 'Анишин']
 
-        def random_name(name):
-            print("Случайное имя:", random.choice(name))
 
-        random_name(names)
+        def random_person(firstname_list, lastname_list):
+            print(f"Случайное имя и фамилия: {random.choice(firstname_list)} {random.choice(lastname_list)}")
+
+
+        random_person(firstname_list, lastname_list)
+
     elif task == 8:
         print("Задание 8: Напишіть програму, яка приймає дві дати в форматі YYYY-MM-DD та обчислює різницю між ними в секундах за допомогою модуля datetime.\n")
 
