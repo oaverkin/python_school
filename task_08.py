@@ -105,14 +105,14 @@ while task != 11:
 
         def get_date():
             date_str = input("Введите дату в формате YYYY-MM-DD: ")
-            date = datetime.datetime.strptime(date_str, "%Y-%m-%d")
+            date = datetime.datetime.strptime(date_str, "%Y-%m-%d").timestamp()
             return date
 
         print("Введите две даты для вычисления разницы в секундах.")
         date1 = get_date()
         date2 = get_date()
 
-        diff = (date2 - date1).total_seconds()
+        diff = date2 - date1
         print("Разница между датами в секундах:", diff)
     elif task == 9:
         print("Задание 9: Створіть скрипт, який виводить на екран список аргументів командного рядка, переданих програмі, використовуючи модуль sys.\n")
