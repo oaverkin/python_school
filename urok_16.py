@@ -1,7 +1,7 @@
 import turtle
 
-v0 = int(input("Введите началбную скорость: "))
-h = int(input("Введите началбную высоту: "))
+v0 = int(input("Введите начальную скорость: "))
+h = int(input("Введите начальную высоту: "))
 turtle.forward(100)
 turtle.backward(100)
 turtle.left(90)
@@ -16,6 +16,7 @@ while y > 0:
     x = v0 * t
     y = h - (9.8 * t**2) / 2
     turtle.goto(x, y)
+
 turtle.up()
 turtle.goto(0, h)
 turtle.write(h)
