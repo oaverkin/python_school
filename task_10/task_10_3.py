@@ -25,3 +25,9 @@ calc.multiply(2, 3)
 calc.divide(5, 2)
 calc.divide(5, 0)
 
+# 5 + 6 = 11
+# 4 - 3 = 1
+# 2 * 3 = 6
+# 5 / 2 = 2.5
+# 5 / 0 -> Error: Cannot divide by zero
+
