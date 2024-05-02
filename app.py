@@ -76,4 +76,5 @@ def delete(id):
     post = Posts.query.get_or_404(id)
     db.session.delete(post)
     db.session.commit()
+    flash('"{}" was successfully deleted!'.format(post.title))
     return redirect(url_for('index'))
