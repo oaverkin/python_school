@@ -77,4 +77,3 @@ def delete(id):
     db.session.delete(post)
     db.session.commit()
     return redirect(url_for('index'))
-
